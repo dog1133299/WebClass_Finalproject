@@ -1,0 +1,397 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Motto 影城</title>
+    <link rel="shortcut icon" href="{% static 'img/ico/icon.png' %}">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/business-casual.css' %}" rel="stylesheet">
+
+     <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <link href="{% static 'css/inside.css" rel="stylesheet">
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="font-family:微軟正黑體;">
+
+
+     <nav   role="navigation" class="navbar  " style="background-color:rgba(1,1, 1, 1);">
+        <div class="container">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse"   >
+                 <ul class="nav navbar-nav" >
+                    <li >
+                       <div class="dropdown">
+                                 <a href="/index/"><button class="dropbtn" style="color: black;">MOTTO</button></a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navigation -->
+    <nav   role="navigation" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="/index/">Motto</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"   >
+                <ul class="nav navbar-nav" >
+                  
+                    <li >
+                       <div class="dropdown">
+                                 <a href="/index/"><button class="dropbtn" >MOTTO</button></a>
+                            </div>
+                    </li>
+                     
+                    <li>
+                    <div class="dropdown">
+                         <button class="dropbtn" >電影介紹</button>
+                          <div class="dropdown-content">
+                                 <a href="/movie/online/">現正上映電影</a>
+                                 <a href="/movie/comingsoon/">即將上映電影</a>
+                                </div> 
+                         </div>
+                    </li>
+
+                    <li>
+                    <div class="dropdown">
+                                 <button class="dropbtn">排行榜</button>
+                             <div class="dropdown-content">
+                                <a href="/movie/hotweek/">本周最熱</a>
+                                <a href="/movie/hotmonth/">本月最熱<img src="{% static 'img/ico/fire.ico' %}"></a>
+                             </div>
+                            </div>
+                       
+                    </li>
+                     <li>
+                     <div class="dropdown">
+                                 <button class="dropbtn">好康優惠</button>
+                             <div class="dropdown-content">
+                                <a href="/news/">最新訊息</a>
+                                <a href="/news/foodsets/">超值套票</a>
+                                <a href="/news/card/">卡友優惠</a>
+                                <a href="/news/group/"> 購買團票</a>
+                             </div>
+                            </div>
+                       
+                    </li>
+                     <li>
+                     <div class="dropdown">
+                                 <button class="dropbtn">影城介紹</button>
+                             <div class="dropdown-content">
+                                <a href="/intro/about/">關於我們</a>
+                                <a href="/intro/contact/">意見信箱</a>
+                                <a href="/intro/device/">設備介紹</a>
+                                <a href="/intro/qanda/">常見Q&A</a>
+                             </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+     
+
+
+
+        <div class="row"  >
+          
+                <div class="col-lg-12 text-center"   ">
+                   
+                                <img class="img-responsive img-full" src="{% static 'img/card.jpg' %}" >
+                            
+                </div>
+            
+        </div>
+
+
+
+ 
+    <!--class="intro-text text-center" 置中用 -->
+<div class="container" style="margin-top: 4%; width:100%;background-color:rgba(0,0,0,0.5);  padding: 5%;   ">
+        <div class="row" >
+           
+                 <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(255,0,0,0.5);padding: 5%; ">
+                    <img src="{% static 'img/ico/icon1.png' %}" style="width: 32px;height: 32px;">
+                    <h1 id="textStyle3">網路訂位</h1><br>
+                    <h6 id="textStyle3">會員專屬網路及APP訂位服務，使用儲值金額消費，可使訂票張數增加，使用更便利!</h6>
+                </div> </div>
+
+                  <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(0,255,0,0.5); padding: 5%;">
+                  <img  src="{% static 'img/ico/icon2.png' %}"  style="width: 32px;height: 32px;">
+                   <h1 id="textStyle3">購票優惠</h1><br>
+                    <h6 id="textStyle3">使用MOTTOA+卡，立即享有目脫大戲院及全台目脫影城會員優惠票價!</h6>
+                </div>  </div>  
+
+
+                 <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(0,0,255,0.5);padding: 5%; ">
+                
+                <img   src="{% static 'img/ico/icon3.png' %}"  style="width: 32px;height: 32px;">
+                 <h1 id="textStyle3">餐飲折扣</h1><br>
+                    <h6 id="textStyle3">使用MOTTOA+卡，立即享有影院販賣部可樂、爆米花5折其他單品8折優惠!</h6>
+               </div>  </div>  
+                 
+
+
+                
+                  <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(255,255,0,0.5);padding: 5%; ">
+                
+                    <img   src="{% static 'img/ico/icon4.png' %}"  style="width: 32px;height: 32px;">
+                     <h1 id="textStyle3">紅利回饋</h1><br>
+                    <h6 id="textStyle3">先現金儲值再消費，累積紅利點數換贈品，讓您儲值娛樂，積點好康A更多!</h6>
+                </div> </div>
+
+                    <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(0,255,255,0.5); padding: 5%;">
+                
+                     <img   src="{% static 'img/ico/icon5.png' %}"  style="width: 32px;height: 32px;">
+                      <h1 id="textStyle3">專屬活動</h1><br>
+                    <h6 id="textStyle3">不定期目脫會員專屬活動，讓您限量電影贈品手到擒來!</h6>
+                 </div> </div> 
+
+                 <div class="col-lg-4 text-center">
+                    <div style=" margin: 2%; background-color:rgba(255,0,255,0.5);padding: 5%; ">
+               
+                     <img  src="{% static 'img/ico/icon6.png' %}"  style="width: 32px;height: 32px;">
+                      <h1 id="textStyle3">便捷取票</h1><br>
+                    <h6 id="textStyle3">會員運用MOTTOA+卡訂票，可利用現場會員專屬窗口，取票更便利!</h6>
+                 </div>   </div> 
+ 
+                  </div> 
+      
+      
+  </div>
+
+     <!--class="intro-text text-center" 置中用 -->
+<div class="container" style="margin-top: 4%;background-color:rgba(0,0,0,0.5);  border-radius:15px;  padding: 8%; ">
+        <div class="row" >
+          
+                <div class="col-lg-12 " >
+          <h1 id="textStyle1">會員權益聲明</h1>
+                    <br>
+
+  <div class="panel-group" id="accordion">
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" >
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"  style="text-decoration:none;">⊙  加入目脫會員有什麼好處及優惠呢 ?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body" > 入會馬上擁有的『目脫A＋卡』適用於全台目脫影院，讓您一手掌握6大優勢！
+<br><br><br>
+☆網路訂位 會員專屬網路訂位服務，新增儲值金額交易機制，訂票張數增加，使用更便利！<br><br>
+☆(網路預購全台國賓影城及台北國賓大戲院電影票，任君挑選精華區座位)<br><br>
+☆購票優惠 使用『目脫A＋卡』，立即享有會員優惠票價！<br><br>
+☆餐飲折扣 使用『目脫A＋卡』，立即享有影院販賣部可樂、爆米花5折，其他單品8折優惠！<br><br>
+☆紅利回饋 先現金儲值再消費，累積紅利點數換贈品，讓您儲值娛樂．積點好康A更多！<br><br>
+☆便捷取票 會員運用儲值金額交易機制訂票，可利用現場取票機服務，取票更快速！<br><br>
+☆專屬活動 不定期專屬活動，讓您首特映票/限量電影贈品手到擒來！<br><br></div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="text-decoration:none;">⊙ 如何加入目脫會員呢?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">加入目脫會員的方式有兩種：
+
+請攜帶身分證件親至欲加入之目脫影城據點會員服務窗口以現金繳交1,00000元訂票保證金，詳填基本資料，發給訂票密碼並領取『目脫A＋卡』即完成會員入會手續。
+於一個月內攜帶您的身分證件至欲加入之目脫影城據點會員專屬窗口，以現金繳交1,00000 元訂票保證金，確認登錄資料無誤，發給訂票密碼並領取『目脫A＋卡』即完成會員入會手續；未於一個月內完成入會手續者，該筆登錄資料將自動取消。<br></div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration:none;">⊙ 網加入會員後是否能立即享有優惠呢 ?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">當您已完成入會繳交訂票保證金手續後，即可立即享現場購票會員優惠票價，但會員網路訂票權益需經3個資料登錄工作天方可行使。
+
+全台目脫影城、台北目脫大戲院: 加入會員後憑目脫A+卡至販賣部消費，即享有可樂、爆米花五折，其他單品八折特別優惠。<br></div>
+      </div>
+    </div>
+
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="text-decoration:none;">⊙ 如何現金儲值以及累積紅利點數 ?</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">『目脫A＋卡』於全台目脫影院現場即可現金儲值！每次現金儲值為現金新台幣1,000元的倍數，現金儲值上限為5,000元，僅接受現金。
+
+累積紅利點數回饋方式說明：現金儲值1,000元回饋1點紅利，現金儲值2,000元回饋2點紅利，以此類推。</div>
+      </div>
+    </div>
+
+
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="text-decoration:none;">⊙ 密碼忘記了怎麼辦 ?</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">可至目脫網路訂票系統http://booking.ambassador.com.tw/點選"密碼查詢"，系統將自動回覆密碼至您登記的E-mail。<br>
+
+若您已無使用原登記信箱，可來信會員服務信箱 member@ambassador.com.tw，附上身分證字號、姓名及出生年月日詢問，我們將盡速為您查詢。</div>
+      </div>
+    </div>
+
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="text-decoration:none;">⊙ 如果我要退出會員，保證金是否可以領回 ?</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">無法<br><br>保證金是保證你永遠不退會，退出會員，保證金理所當然是我們的了。
+       </div>
+      </div>
+    </div>
+
+
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="text-decoration:none;">⊙  加入會員為什麼需繳交100000元保證金 ?</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body">加入目脫會員有繳交1,00000元訂票保證金制度，是為了會員網路預先訂位可以到現場會員專屬窗口出示身分證明文件取票時再行付費。<br>
+        如會員網路訂位卻未取票，將自保證金中扣抵訂票未取金額並暫停會員訂票權益，直至補足訂票保證金至1,000元後方可恢復。</div>
+      </div>
+    </div>
+
+
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="text-decoration:none;">⊙ 會員身分可否移轉 ?</a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+        <div class="panel-body">由於目脫會員採記名制, 僅會員本人享有會員專屬優惠權益，故會員身分無法直接移轉，
+        <br>如欲移轉給他人，仍需請您先辦理退會手續，再請他親自至現場會員窗口辦理申請入會事宜完成入會手續後，現場可立即請領會員專屬之[目脫A+卡]。<br></div>
+      </div>
+    </div>
+
+
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="text-decoration:none;">⊙ A+卡不見了，怎麼辦 ?</a>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse">
+        <div class="panel-body">為了你我的方面，為了節省兩方的時間，請直接重辦一張。 <br></div>
+      </div>
+    </div>
+
+     </div>    
+    </div>
+  </div>
+</div>
+ 
+
+    <footer style="background-color:rgba(100,100, 120, 0.3); margin-top: 4%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+  
+                    
+                    <p>Copyright &copy; Motto Website 2017</p>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <script src="{% static 'js/twcaseal_v3.js' %}"></script>
+    <script src="{% static 'js/helper.js' %}"></script>
+    <script src="{% static 'js/inside.js' %}"></script>
+    <script src="{% static 'js/jquery.validationEngine.js' %}"></script>
+    <script src="{% static 'js/jquery.validationEngine-zh_TW.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-1.1.0.js' %}"></script>
+    <script src="{% static 'js/photoswipe.min.js' %}"></script>
+    <script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
+    <script src="{% static 'js/scrolltopcontrol.js' %}"></script>
+    <script src="{% static 'js/share.js' %}"></script>
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

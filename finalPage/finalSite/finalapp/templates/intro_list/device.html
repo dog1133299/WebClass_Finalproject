@@ -1,0 +1,308 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Motto 影城-設備介紹</title>
+    <link rel="shortcut icon" href="{% static 'img/ico/icon.png' %}">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/business-casual.css' %}" rel="stylesheet">
+
+     <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <link href="{% static 'css/inside.css" rel="stylesheet">
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="font-family:微軟正黑體;">
+
+
+     <nav   role="navigation" class="navbar  " style="background-color:rgba(1,1, 1, 1);">
+        <div class="container">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse"   >
+                 <ul class="nav navbar-nav" >
+                    <li >
+                       <div class="dropdown">
+                                 <a href="/index/"><button class="dropbtn" style="color: black;">MOTTO</button></a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navigation -->
+    <nav   role="navigation" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="/index/">Motto</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"   >
+                <ul class="nav navbar-nav" >
+                  
+                    <li >
+                       <div class="dropdown">
+                                 <a href="/index/"><button class="dropbtn" >MOTTO</button></a>
+                            </div>
+                    </li>
+                     
+                    <li>
+                    <div class="dropdown">
+                         <button class="dropbtn" >電影介紹</button>
+                          <div class="dropdown-content">
+                                 <a href="/movie/online/">現正上映電影</a>
+                                 <a href="/movie/comingsoon/">即將上映電影</a>
+                                </div> 
+                         </div>
+                    </li>
+
+                    <li>
+                    <div class="dropdown">
+                                 <button class="dropbtn">排行榜</button>
+                             <div class="dropdown-content">
+                                <a href="/movie/hotweek/">本周最熱</a>
+                                <a href="/movie/hotmonth/">本月最熱<img src="{% static 'img/ico/fire.ico' %}"></a>
+                             </div>
+                            </div>
+                       
+                    </li>
+                     <li>
+                     <div class="dropdown">
+                                 <button class="dropbtn">好康優惠</button>
+                             <div class="dropdown-content">
+                                <a href="/news/">最新訊息</a>
+                                <a href="/news/foodsets/">超值套票</a>
+                                <a href="/news/card/">卡友優惠</a>
+                                <a href="/news/group/"> 購買團票</a>
+                             </div>
+                            </div>
+                       
+                    </li>
+                     <li>
+                     <div class="dropdown">
+                                 <button class="dropbtn">影城介紹</button>
+                             <div class="dropdown-content">
+                                <a href="/intro/about/">關於我們</a>
+                                <a href="/intro/contact/">意見信箱</a>
+                                <a href="/intro/device/">設備介紹</a>
+                                <a href="/intro/qanda/">常見Q&A</a>
+                             </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+     
+
+
+
+        <div class="row"  >
+          
+                <div class="col-lg-12 text-center"   ">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                             
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" >
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="{% static 'img/device1.jpg' %}" >
+                                <div class="carousel-caption"  style=" text-shadow: 0em 0em 0.2em black;">
+                                <h6>IMAX是加拿大的IMAX集團所研發的一種巨型銀幕電影。一般商業用35厘米影片為4個齒孔一個畫面，IMAX的底片面積有傳統35厘米底片之十倍大之多，保存期限也較長。
+IMAX底片解析度高，投射至銀幕之畫質表現亦格外清晰自然，就算在比一般播放35厘米影片之銀幕大上十倍之銀幕上仍可呈現完美投射，無粗糙顆粒感之鮮明影像使情境更趨近真實。</h6></div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="{% static 'img/device2.jpg' %}">
+                                <div class="carousel-caption"  style=" text-shadow: 0em 0em 0.2em black;">
+                                <h4>(不要誤會，此為示意圖)</h4></div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="{% static 'img/device3.jpg' %}">
+                                <div class="carousel-caption"  style=" text-shadow: 0em 0em 0.2em black;">
+                                <h4>(不要誤會，此為示意圖)</h4></div>
+                            </div>
+                             
+                        </div>
+
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                           
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                           
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>  
+                </div>
+            
+        </div>
+
+
+
+ 
+    <!--class="intro-text text-center" 置中用 -->
+<div class="container" style="margin-top: 4%; background-color:rgba(0,0,50,0.3);  width:100%;  padding: 5%;   ">
+        <div class="row" >
+          
+                <div class="col-lg-12 " > 
+                    <h1 class="intro-text text-center" id="textStyle4">設備介紹</h1>
+                    <hr> 
+                </div>
+                 <div class="col-lg-12 " >
+                      <h3 class="intro-text text-center" id="textStyle4">高級音響設備與超高級20吋大螢幕</h3>
+                    <hr>
+                </div> 
+                
+                <div class="col-lg-6">
+                        <img src="{% static 'img/music.png' %}"  style=" width:100%; height: 100% ; padding: 20%;">
+                         <h2 id="textStyle4"></h2>
+                          
+                       </div>  
+                <div class="col-lg-6">
+                        <img src="{% static 'img/TV.png' %}"  style=" width:100%; height: 100% ; padding: 20%;">  
+                       </div>
+             
+  </div>
+
+</div>
+
+
+<div class="container" style="width:100%; margin-top: 4%; background-color:rgba(0,0,50,0.3);  ">
+        <div class="row"  >
+            <div class="box" style="background-color:rgba(0,0,0,0); padding: 5%;  ">
+                <div class="col-lg-12">
+                    
+                    <h1 class="text-center" id="textStyle3">高級座位</h1>
+                    <hr> 
+
+
+                    <p class="text-center"  id="textStyle3" >   我們擁有最高級最享受的座椅，也有平價座位，不論你是有錢人或普通人，都可以到電影院享受超強冷氣。</p>
+
+                    <div class="col-lg-3">
+                        <img src="{% static 'img/c1.jpg' %}"  style=" width:100%; height: 100% ; padding: 2%;">
+                         <h2 id="textStyle4">平民高級紅綠座位</h2>
+                          
+                       </div> 
+
+                          <div class="col-lg-3">
+                        
+                        <img src="{% static 'img/c2.jpg' %}"  style="   width:100%;height: 100% ;  padding: 2%;">
+                         <h2 id="textStyle4">小康高級涼感座位</h2>
+                          
+                        </div> 
+
+                          <div class="col-lg-3">
+                        
+                        <img src="{% static 'img/c3.jpg' %}"  style="   width:100%;height: 100% ;  padding: 2%;">
+                         <h2 id="textStyle4">豪華涼感超享受座位</h2>
+                          
+                        </div> 
+
+                         <div class="col-lg-3">
+                        
+                        <img src="{% static 'img/c4.jpg' %}"  style="  width:100%; height: 100% ;  padding: 2%;">
+                         <h2 id="textStyle4">壕壕喔座位</h2>
+                          
+                        </div> 
+                    
+                </div>
+            </div>
+        </div>
+            
+        </div>   
+     
+    <!-- /.container -->
+
+    <footer style="background-color:rgba(100,100, 120, 0.3); margin-top: 4%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" >
+  
+                    
+                    <p>Copyright &copy; Motto Website 2017</p>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <script src="{% static 'js/twcaseal_v3.js' %}"></script>
+    <script src="{% static 'js/helper.js' %}"></script>
+    <script src="{% static 'js/inside.js' %}"></script>
+    <script src="{% static 'js/jquery.validationEngine.js' %}"></script>
+    <script src="{% static 'js/jquery.validationEngine-zh_TW.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-1.1.0.js' %}"></script>
+    <script src="{% static 'js/photoswipe.min.js' %}"></script>
+    <script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
+    <script src="{% static 'js/scrolltopcontrol.js' %}"></script>
+    <script src="{% static 'js/share.js' %}"></script>
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+    <!-- EDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDAEDA -->
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
